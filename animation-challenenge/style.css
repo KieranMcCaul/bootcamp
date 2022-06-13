@@ -1,0 +1,217 @@
+* {
+  border: 0;
+  margin: 0;
+  font-family: 'New Super Mario Font U', sans-serif;
+  box-sizing: border-box;
+}
+
+.background {
+  position: absolute;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Letters */
+.letters-container {
+  left: 200px;
+  width: 100vw;
+  height: 100vh;
+}
+
+div {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: -4px 4px #ef3550,
+    -8px 8px #f48fb1,
+    -12px 12px #7e57c2,
+    -16px 16px #2196f3,
+    -20px 20px #26c6da,
+    -24px 24px #43a047,
+    -28px 28px #eeff41,
+    -32px 32px #f9a825,
+    -36px 36px #ff5722;
+  font-size: 100px;
+  position: relative;
+  width: 250px;
+  height: 200px;
+}
+
+.letters-container div {
+  position: absolute;
+  visibility: hidden;
+}
+
+.letters-1 {
+  --space: 200px;
+  left: 200px;
+  animation: letter-animation .5s forwards;
+  animation-delay: 1.5s;
+}
+
+.letters-2 {
+  --space: 400px;
+  left: 400px;
+  animation: letter-animation .5s forwards;
+  animation-delay: 1.75s;
+}
+
+.letters-3 {
+  --space: 600px;
+  left: 600px;
+  animation: letter-animation .5s forwards;
+  animation-delay: 2s;
+}
+
+.letters-4 {
+  --space: 0px;
+  top: 200px;
+  animation: letter-animation .5s forwards;
+  animation-delay: 2.25s;
+}
+
+.letters-5 {
+  --space: 200px;
+  top: 200px;
+  left: 200px;
+  animation: letter-animation .5s forwards;
+  animation-delay: 2.5s;
+}
+
+.letters-6 {
+  --space: 400px;
+  top: 200px;
+  left: 400px;
+  animation: letter-animation .5s forwards;
+  animation-delay: 2.75s;
+}
+
+.letters-7 {
+  --space: 600px;
+  top: 200px;
+  left: 600px;
+  animation: letter-animation .5s forwards;
+  animation-delay: 3s;
+}
+
+.letters-8 {
+  --space: 800px;
+  top: 200px;
+  left: 800px;
+  animation: letter-animation .5s forwards;
+  animation-delay: 3.25s;
+}
+
+/* Mario */
+.mario-container {
+  position: absolute;
+  bottom: 20%;
+  left: -400px;
+  width: 190px;
+  overflow: hidden;
+  animation: mario-move 6s linear infinite forwards;
+}
+
+.mario-img {
+  position: relative;
+  image-rendering: pixelated;
+  width: 600px;
+  animation: mario-run .3s steps(3) infinite;
+}
+
+/* STAR */
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  animation: star-vertical .5s infinite linear;
+}
+
+.vertical {
+  background-image: url(images/star.png);
+  background-size: cover;
+  width: 100px;
+  height: 75px;
+}
+
+.horizontal {
+  bottom: 20%;
+  left: -200px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: star-horizontal 6s linear infinite;
+}
+
+/* keyframes */
+@keyframes letter-animation {
+  from {
+    top: -100px;
+    opacity: 25%;
+    transform: rotate(1080deg);
+  }
+
+  to {
+    visibility: visible;
+    left: var(--space);
+  }
+}
+
+@keyframes mario-run {
+  from {
+    transform: translatex(0px);
+  }
+
+  to {
+    transform: translatex(-100%);
+  }
+}
+
+@keyframes mario-move {
+  0% {
+    left: -40%;
+  }
+
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes star-vertical {
+  0% {
+    align-items: flex-start;
+  }
+
+  25% {
+    align-items: center;
+  }
+
+  50% {
+    align-items: flex-end;
+  }
+
+  75% {
+    align-items: center;
+  }
+
+  100% {
+    align-items: flex-start;
+  }
+}
+
+@keyframes star-horizontal {
+  from {
+    left: -20%;
+  }
+
+  to {
+    left: 120%;
+  }
+
+}
