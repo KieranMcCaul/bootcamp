@@ -1,0 +1,102 @@
+.logo-cart {
+display: flex;
+width: 100%;
+position: absolute;
+align-items: center;
+justify-content: space-evenly;
+margin:  20px 0;
+}
+.logo-cart img {
+  width: 60%;
+  padding:  0 25px;
+}
+
+nav {
+  width: 50%;
+  padding: 0 10px;
+}
+
+ul > a {
+color: rgba(8, 8, 103, 0.656);
+font-weight: bold;
+font-size: 20px;
+text-decoration: none;
+padding: 0 15px;
+}
+
+body {
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.b-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/img.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+.main {
+margin: 300px 0;
+display: flex;
+position: absolute;
+justify-content: center;
+align-items: center;
+}
+
+.main ul {
+  display: flex;
+}
+
+.socials {
+  flex-direction: column;
+}
+.socials a {
+  padding: 5px;
+}
+
+.text {
+color: rgb(20, 6, 99);
+font-weight: bold;
+font-size: 20px;
+text-decoration: none;
+padding: 0 50px;
+margin-left: 20px;
+}
+
+.main-center {
+  flex-direction: column;
+}
+.arrows-container {
+  margin-top: 25px;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.arrows {
+  width: 75px;
+  margin: 0 25px;
+}
+
+.collections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #A3C8FE,#E2B9F4);
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: 200px;
+}
+.collections a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+}
