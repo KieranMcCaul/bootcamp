@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .on-off {
+        display: none;
+      }
+
+      #bulb-on {
+        position: absolute;
+        top: 27px;
+        left: -22px;
+        width: 500px;
+        height: 250px;
+        background-image: url("bulb-on.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      #bulb-off {
+        width: 100%;
+        height: 250px;
+        background-image: url("bulb-off.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="lightSwitch()">Switch</button>
+
+    <div id="bulb-on"></div>
+    <div id="bulb-off"></div>
+
+    <script>
+      function lightSwitch() {
+        var element = document.getElementById("bulb-on");
+        element.classList.toggle("on-off");
+      }
+    </script>
+  </body>
+</html>

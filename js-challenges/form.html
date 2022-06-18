@@ -1,0 +1,25 @@
+<form>
+  <!-- required, maxLength 20 -->
+  <input id="maxLength" class="required" type="text" />
+  <!-- value between -10 to 10 -->
+  <input id="range" type="number" />
+  <!-- does not let you type the letter T -->
+  <input id="no-t" type="text" />
+  <!-- required -->
+  <input class="required" type="checkbox" />
+  <input id="checkbox2" type="checkbox" />
+  <!-- required if checkbox 2 is required -->
+  <input type="text" />
+  <input type="submit" />
+</form>
+
+<script>
+
+  const maxLengthElement = document.querySelector("#maxLength");
+  maxLengthElement.addEventListener("keydown", (event) => {
+    if (maxLengthElement.value.length === 20) {
+      preventDefault();
+    }
+  })
+  
+</script>
