@@ -1,10 +1,9 @@
 function bmiCalc(weight, height) {
-  var bmi = weight / (height * height);
-  // return bmi;
-  return Math.round(bmi * 10) / 10;
+  var equation = weight / (height * height);
+  return Math.round(equation * 10) / 10;
 }
 
-var bm = bmiCalc(80, 1.8);
+var bmi = bmiCalc(80, 1.8);
 
 if (bmi < 18.5) {
   bmi = `your BMI is ${bmi}, so you are underweight.`;
