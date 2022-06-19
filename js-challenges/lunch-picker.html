@@ -12,30 +12,30 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      }
+    }
 
-      .title {
-        text-decoration: underline;
-      }
+    .title {
+      text-decoration: underline;
+    }
 
-      ul,
-      li {
-        margin: 10px;
-        text-align: center;
-        font-size: large;
-        list-style: none;
-        padding: 0;
-     }
+    ul,
+    li {
+      margin: 10px;
+      text-align: center;
+      font-size: large;
+      list-style: none;
+      padding: 0;
+    }
   </style>
   <body>
-    <h1 class="title">Who Is The Unlucky One Today?</h1>
+    <h1 class="title">Who Will Pay For Lunch?</h1>
     <ul>
-      <li>Angela</li>
-      <li>Ben</li>
-      <li>Bob</li>
-      <li>Jenny</li>
-      <li>Micheal</li>
-      <li>Chloe</li>
+      <li class="name1">Ronald</li>
+      <li class="name2">George</li>
+      <li class="name3">Obama</li>
+      <li class="name4">Kennedy</li>
+      <li class="name5">Abraham</li>
+      <li class="name6">Theodore</li>
     </ul>
 
     <button id="btn">Good Luck!</button>
@@ -44,26 +44,31 @@
 
     <script>
       //Array
-      const players = ["Angela", "Ben", "Bob", "Jenny", "Micheal", "Chloe"];
+      const players = [
+        document.querySelector(".name1").innerHTML,
+        document.querySelector(".name2").innerHTML,
+        document.querySelector(".name3").innerHTML,
+        document.querySelector(".name4").innerHTML,
+        document.querySelector(".name5").innerHTML,
+        document.querySelector(".name6").innerHTML,
+      ];
 
       //Random Number Generator
       function randomNumber() {
-        let x = Math.floor(Math.random() * (players.length - 1));
+        let x = Math.floor(Math.random() * players.length);
         let y = players[x];
         return y + " is going to buy lunch today!";
       }
 
-      //Javascript output
-      let loser = randomNumber();
-      console.log(loser);
-
       //HTML Output
-      const chosenOne = [""];
-      document.getElementById("btn").addEventListener("click", draw);
-      
-      function draw() {
-        document.getElementById("result").innerHTML = chosenOne.fill(loser);
-      }
+      const btnClick = [""];
+      document
+        .getElementById("btn")
+        .addEventListener("click", function fillHtml() {
+          document.getElementById("result").innerHTML = btnClick.fill(
+            randomNumber()
+          );
+        });
     </script>
   </body>
 </html>
