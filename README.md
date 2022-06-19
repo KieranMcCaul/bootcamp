@@ -23,7 +23,8 @@ ___
 [Refractoring Guru](https://refactoring.guru/)
 ___
 **Tutorials** 📚
-
+[FrontEnd Mentor](https://www.frontendmentor.io)
+[Scrimba](https://scrimba.com)
 [Piccalilli](https://piccalil.li/)  
 [Internet Is Hard](https://www.internetingishard.com/)  
 [The Odin Project](https://www.theodinproject.com/)  
