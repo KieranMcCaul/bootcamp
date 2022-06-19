@@ -17,8 +17,8 @@
 
   const maxLengthElement = document.querySelector("#maxLength");
   maxLengthElement.addEventListener("keydown", (event) => {
-    if (maxLengthElement.value.length === 20) {
-      preventDefault();
+    if ( maxLengthElement.value.length === 20) {
+      event.preventDefault();
     }
   })
   
