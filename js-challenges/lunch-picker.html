@@ -53,20 +53,20 @@
         document.querySelector(".name6").innerHTML,
       ];
 
-      //Random Number Generator
-      function randomNumber() {
+      //Random Name Picker
+      function randomName() {
         let x = Math.floor(Math.random() * players.length);
         let y = players[x];
         return y + " is going to buy lunch today!";
       }
 
       //HTML Output
-      const btnClick = [""];
+      const btnClick =
       document
         .getElementById("btn")
         .addEventListener("click", function fillHtml() {
           document.getElementById("result").innerHTML = btnClick.fill(
-            randomNumber()
+            randomName()
           );
         });
     </script>
