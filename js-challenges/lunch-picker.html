@@ -56,12 +56,11 @@
       //Random Name Picker
       function randomName() {
         let x = Math.floor(Math.random() * players.length);
-        let y = players[x];
-        return y + " is going to buy lunch today!";
+        return players[x] + " is going to buy lunch today!";
       }
 
       //HTML Output
-      const btnClick =
+      const btnClick = [""]
       document
         .getElementById("btn")
         .addEventListener("click", function fillHtml() {
