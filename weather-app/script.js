@@ -8,7 +8,7 @@ const currentTempEl = document.getElementById("current-temp");
 
 const api = "49c0a6404d83c53f0f1f59ff352ec34b";
 
-const background =["trees","clouds","mountain","snow","thunder"];
+const background =["tree","cloud","mountain","snow","thunder"];
 const ranNum = Math.floor(Math.random() *background.length);
 function backgroundImage() {
   document.body.style.backgroundImage = `url(images/${background[ranNum]}.jpg)`;
