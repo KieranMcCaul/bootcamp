@@ -22,10 +22,15 @@ body {
 .current-info {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   flex-wrap: wrap;
 }
 
 .date-container .time {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-shadow: 3px 3px 1px white;
   color: #3c3c44;
   font-size: 70px;
   font-weight: 400;
@@ -37,6 +42,7 @@ body {
 }
 
 .date-container .date {
+  text-shadow: 2px 2px 1px white;
   color: #3c3c44;
   font-size: 30px;
 }
@@ -46,6 +52,7 @@ body {
 }
 
 .place-container .timezone {
+  text-shadow: 2px 2px 1px white;
   color: #3c3c44;
   font-size: 30px;
   font-weight: 700;
@@ -55,6 +62,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #3c3c44;
+  text-shadow: 2px 2px 1px white;
 }
 
 .current-info .others {

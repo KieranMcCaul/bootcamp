@@ -107,8 +107,8 @@ currentWeatherItemsEl.innerHTML =
         <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png" alt="weather icon" class="w-icon" />
         <div class="other">
         <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
-        <div class="temp">Night - ${day.temp.night}; C</div>
         <div class="temp">Day - ${day.temp.day}; C</div>
+        <div class="temp">Night - ${day.temp.night}; C</div>
       </div>`
 
       
@@ -117,8 +117,8 @@ currentWeatherItemsEl.innerHTML =
         `<div class="weather-forecast-item">
         <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
         <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class="w-icon" />
-        <div class="temp">Night - ${day.temp.night}; C</div>
         <div class="temp">Day - ${day.temp.day}; C</div>
+        <div class="temp">Night - ${day.temp.night}; C</div>
       </div>`
       }
      })
