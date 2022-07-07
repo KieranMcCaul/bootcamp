@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <h1>My Contacts</h1>
-      
+
       {contacts.map((contacts) => (
         <Card
           name={contacts.name}
